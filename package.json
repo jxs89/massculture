@@ -1,5 +1,5 @@
 {
-  "name": "massculture.ca",
+  "name": "massculture.cs",
   "version": "1.0.0",
   "description": "boilerplate",
   "main": "index.js",
@@ -27,18 +27,5 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jxs89/massculture.git"
-  },
-  "keywords": [
-    "massculture",
-    "canada",
-    "website"
-  ],
-  "bugs": {
-    "url": "https://github.com/jxs89/massculture/issues"
-  },
-  "homepage": "https://github.com/jxs89/massculture#readme"
+  "dependencies": {}
 }
