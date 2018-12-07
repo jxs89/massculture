@@ -1,19 +1,41 @@
 doctype html
 html(lang='en')
 head
-    title boilderplate
-    link(rel=stylesheet src='./public/styles/style.css')
+    title massculture.ca
+    link(rel='stylesheet', href='./public/styles/style.css')
 body
     .container#app
-        h1.title Boilerplate Template
-        h2.sub-title Setup Files 
-        header.main-header
-            h2.title This is the header
-            p.text This is a paragraph tag
-        main.main-content
-            section.content
-                h2.title This is a content section with an update. 
-            section.content
-                h2.title This is a 2nd content section with update. 
-        footer.main-footer
-            p.text This is the footer
+        .body-wrap
+            .wrapper
+                include components/header.pug
+            
+                main.main-content
+                    section.content
+                        iframe(src='https://player.vimeo.com/video/280804679', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', width='100%', height='360', frameborder='0' autoplay)
+                            
+                    section.content
+                        p.text.fl 
+                            | Mass Culture is a collaborative initiative that strives to support artists, arts organizations and academic institutions across the country. The intent is to form a network of stakeholders, which, through research, will address cultural policy issues at organizational, sectoral, and governmental levels. A steering committee has been set up to review, listen, revise and update structures and policies within the Canadian arts ecology, while making strong recommendations for action as we move toward our bright, collective future.
+                        p.text
+                            | Mass culture will address an information gap in the sector. A need for this work has resulted from the decrease in activity of the 
+                            strong.hl Canadian Conference of the Arts
+                            | , which, over 67 years, established a strong reputation for arts & cultural policy leadership. Educational and governmental representatives have indicated that they lack a central location for reliable policy information about the Canadian arts sector.
+
+                        p.text.fl
+                            | Mobilisation culturelle est une initiative de collaboration conçue dans l’optique de soutenir les artistes, les organismes artistiques et les établissements d’enseignement et de recherche d’un bout à l’autre du pays.  Pour ce faire, nous entendons mettre en place un réseau d’intervenants qui, dans le cadre de leurs travaux de recherche, examineront des questions de politique culturelle sur les plans organisationnel, sectoriel et gouvernemental.  Nous avons constitué un comité directeur chargé d’étudier, d’entendre, de réviser et de mettre à jour les structures et les politiques de l’écosystème des arts au Canada ;  ce comité sera appelé à présenter des recommandations fermes quant aux mesures à prendre afin d’assurer un avenir collectif brillant au monde des arts.
+                        p.text
+                            | L’initiative Mobilisation culturelle est un moyen de combler les lacunes informationnelles dans le secteur. S’il nous faut maintenant effectuer ce travail, c’est que nous avons subi les contrecoups d’une réduction de l’activité de la  
+                            strong.hl Conférence canadienne des arts
+                            |, qui, pendant 67 ans, s’était acquis une solide réputation de leader en matière de politique artistique et culturelle.  Des représentants du monde de l’enseignement et du gouvernement ont indiqué qu’il leur manque un dépôt – ou carrefour – où serait centralisée de l’information fiable sur la politique publique qui concerne le secteur des arts au Canada.
+                    section.content
+                            include components/subscribe.pug
+                        
+                    section#networking.networking
+                        .content
+                            include components/networklist.pug
+                        
+
+                
+            include components/footer.pug
+            
+        

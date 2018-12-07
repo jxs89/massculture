@@ -1,0 +1,67 @@
+
+
+.main-header{
+    height: auto;
+}
+.main-nav{
+    margin: 1rem auto;
+    background: #333;
+}
+@font-face{
+    font-family: 'title';
+    src: url('../fonts/FjallaOne-Regular.ttf');
+}
+@font-face{
+    font-family: 'lato';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+%logo{
+    margin: 0 auto;
+    // display: inline;
+}
+.mass{
+    @extend %logo;
+    color: rgb(231, 0, 143);
+    font-family: title;
+    font-size: 5rem;
+    text-transform: uppercase;
+
+}
+.culture{
+    font-family: lato;
+    padding-right: 1rem;
+    font-size: 4rem;
+    &:first-child(){
+        border-right: 2px solid black;
+    }
+}
+.logo-style{
+    display: inline;
+    padding: 2rem;
+    text-align: left;
+    .title{
+        display: block;
+        // @extend %logo;
+    }
+}
+.nav-list{
+    @extend %list;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.5rem;
+    li{
+        padding: 1rem;
+        a{
+            text-decoration: none;
+            color: #eee;
+            transition: 300ms;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-color: cyan;
+                width: 100%;
+                color: cyan;
+            }
+
+        }
+    }
+}

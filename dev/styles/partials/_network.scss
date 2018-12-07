@@ -1,0 +1,36 @@
+.nametag{
+    color: darkcyan;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    display: block;
+}
+%list{
+   display: flex;
+   list-style: none;
+   height: auto;
+   width: auto; 
+   padding: 0;
+}
+.networking{
+    // padding: 2rem;
+    background: rgba(0,0,0,.9);
+}
+
+.network-title{
+    @extend %title;
+    color: #eee;
+    border: 2px solid #eee;
+}
+.network-list{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
+   padding: 0;
+   li{
+        list-style: none;
+        color: grey;
+        padding: 1rem;
+        font-size: 1.3rem;
+
+   }
+}

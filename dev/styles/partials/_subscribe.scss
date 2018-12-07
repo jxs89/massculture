@@ -1,0 +1,81 @@
+.subA{
+    @extend %title;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid black
+}
+.subscribe-form p{
+    font-size: 1.5rem;
+    margin: 5rem 0;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.subscribe-form input{
+    display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+    margin-bottom: 10px;
+    font-size:1.5rem;
+}
+.subscribe-form input[type=button]{
+    border: 1px solid red;
+    width: 100px;
+    margin: 3rem 0;
+    background: #333;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+select{
+    width: 310px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position-x: 280px;
+    option{
+    
+        height: 50px;
+    }
+}
+
+// .select-style{
+//     border: none;
+//     color: #333;
+//     font-size: 1.5rem;
+//     padding: 5px;
+//     transition: all 275ms ease-in-out;
+//     background-color: lightgray;
+//     cursor: pointer;
+// }
+
+.form-subscribe{
+    // display: inline-block;
+    // padding: 5rem;
+    // border: 2px solid black;
+    text-align: center;
+    background: rgba(0,0,0,.1);
+    margin: 5rem auto;
+    padding: 20px;
+    width: 100%;
+    input{
+        // margin: 1rem 0;
+        display: inline-block;
+        padding: 1rem;
+        margin: 1rem;
+        &:active{
+            border: 1px solid #333;
+        }
+    }
+}

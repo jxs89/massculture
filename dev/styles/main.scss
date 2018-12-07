@@ -1,3 +1,69 @@
-body{
-    background: red;
+:root{
+    font-size: 62.5%;
 }
+@font-face{
+    font-family: 'title';
+    src: url('../assets/fonts/Average-Regular.ttf');
+}
+body{
+    background: #eee;
+}
+.container{
+    width: 100%;
+    height: auto;
+    max-width: 3000px;
+    max-height: 10000px;
+    margin: 0 auto;
+}
+%center{
+    margin: 1rem auto;
+    width: 75%;
+}
+.body-wrap{
+    @extend %shadow;
+    margin: 0 auto;
+    width: 75%;
+
+}
+.wrapper{
+    background: white;
+}
+%shadow{
+    -webkit-box-shadow: 0px 1px 31px -1px rgba(117,117,117,1);
+-moz-box-shadow: 0px 1px 31px -1px rgba(117,117,117,1);
+box-shadow: 0px 1px 31px -1px rgba(117,117,117,1);
+}
+.content{
+    @extend %center;
+    padding: 2rem;
+}
+%text-font{
+    font-family: lato;
+}
+%title{
+    @extend %text-font;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 5rem 0;
+    display: inline-block;
+    padding: 1rem;
+}
+.text{
+    @extend %text-font;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    line-height: 25px;
+    padding: 1rem;
+}
+.fl::first-letter{
+        font-size: 5rem;
+        color: rgb(231, 0, 143);
+    }
+.hl{
+    color: darkcyan;
+}
+@import 'partials/reset';
+@import 'partials/header';
+@import 'partials/content';
+@import 'partials/subscribe';
+@import 'partials/network';

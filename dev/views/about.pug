@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+head
+    title massculture.ca
+    link(rel='stylesheet', href='./public/styles/style.css')
+body
+    .container#app
+        .body-wrap
+            .wrapper
+                include components/header.pug
+            
+                main.main-content
+                    section.content 
+                        p.text In 2018, Mass Culture will begin community conversations to consider its structure (including research methodology) and determine existing knowledge gaps in our country’s cultural policy. With thanks to the Toronto Arts Council’s support to get this initiative off the ground, time and resources will be dedicated toward consultations across the country between 2018 and Summer 2019.   These sessions will engage more than 1,000 individuals and organizations representing arts stakeholders, cultural industries, heritage groups, academia and arts-friendly supporters. This year, we intend to work with the sector to imagine what the organizational framework should include, identify cultural policy issues of common cause and develop coordinated strategies. The consultations will be centered on the discussion of a model that will support accurate, holistic data and communications about cultural policy in Canada. We anticipate a real appetite by the community to address how Mass Culture will incorporate the following themes into its work:                           
+                    section.content
+                    section.content
+                            include components/subscribe.pug
+                    section#networking.networking
+                        .content
+                            include components/networklist.pug
+            include components/footer.pug
